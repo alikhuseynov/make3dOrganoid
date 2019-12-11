@@ -1,0 +1,39 @@
+#==================================
+## Author: Alik Huseynov ##
+# email: alikhuseyno/at/gmail.com
+#==================================
+
+#==================================
+# folder content:
+
+# /input_images contains bright field images of organoids (multiple organoids per image or single organoid per image). Those are rgb and grayslace images.
+# /output_fiji will contain the image segmentaion output directory, see the "## step1 Fiji" for details.
+# /ref_paper4data contains the .pdf of the article (https://www.ncbi.nlm.nih.gov/pubmed/28041895) from where the input images came from. And the two dowloaded figures.
+# /scripts contains the .ijm scripts for Fiji, and main_scr_vignettes.Rmd script also main_scr_vignettes.html for 2D outline-based 3D model reconstruction
+# .txt file for the workflow
+#==================================
+
+#==================================
+## step1 Fiji:
+# in file folder /scripts the  segmentOutlines_rgb.ijm (for rgb images) and segmentOutlines_grayscale.ijm (for grayscale images). You may modify the input and output paths to your desired folders/directories. Note that rgb images need some more image processing than grayscale images.
+
+# run the fiji macro scripts .ijm scripts (drag-and-drop it onto Fiji) on your data/images. Check the output and change some parameters for filtering or add your desired ones (this requires some knowledge in image processing-analysis).
+
+# after the Fiji completed its job, check the output_fiji folder. It will contain folders that have the same name as the input images, each of these folders will have .txt files with xy coordinates for outlines and .roi files for the those outlines.
+
+# drag-and-drop onto Fiji one of the segmented output images (it should have .tif file extension); you will see the numbering for each segmented peace.
+
+# pick those outlines and note the number corresponding outline for each organoid on the original image.
+
+# NOTE: not always segmentation will work well, it highly depends on the intensities, signal-to-noise ratio and background of your images. Therefore one needs to adjust the script for specific images.
+#==================================
+
+#==================================
+## step2 R:
+# NOTE: you need to know which segmented organoid belongs to which stage/developmental_time and the group (as in the orignal image). Ideally one puts all the images for one specific group from one specific time point in one folder. eg. 2 groups and 3 time points would be 6 folder with images.
+
+# follow the steps in the Rmd script.
+
+# Feel free to email me and ask questions! :)
+# if you want to try yourself to do 3D reconstruction of your own image data, and run into problems, feel free to email me..
+#==================================
