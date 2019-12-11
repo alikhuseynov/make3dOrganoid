@@ -6,7 +6,7 @@ Detailed steps can be found in [manual](https://github.com/alikhuseynov/make3dOr
 
 ![3D reconstructions](https://github.com/alikhuseynov/make3dOrganoid/blob/master/figx2_method.png)
 
-Data was used from Li et al., 2017 [Induction of Expansion and Folding in Human Cerebral Organoids](https://www.ncbi.nlm.nih.gov/pubmed/28041895)
+Image data was taken from Li et al., 2017 [Induction of Expansion and Folding in Human Cerebral Organoids](https://www.ncbi.nlm.nih.gov/pubmed/28041895)
 
 #### *Note: R version 3.3 was used here.* You will need to compile the packages/libraries that are used in [.Rmd script](https://github.com/alikhuseynov/make3dOrganoid/blob/master/scripts/main_scr_vignettes.Rmd)
 
