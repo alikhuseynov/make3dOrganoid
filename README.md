@@ -1,3 +1,6 @@
+#### We used this method in this article:
+[Reintroduction of the archaic variant of NOVA1 in cortical organoids alters neurodevelopment Science 2021](https://science.sciencemag.org/content/371/6530/eaax2537.abstract)
+
 ### make3dOrganoid
 This is the method to obtaind 3D brain organoid model reconstructions from 2D bright field images using Fiji and R. 
 Detailed steps can be found in [manual](https://github.com/alikhuseynov/make3dOrganoid/blob/master/workflow_manual.txt) and in [Rmd script](https://github.com/alikhuseynov/make3dOrganoid/blob/master/scripts/main_scr_vignettes.Rmd) or view it directly [vignettes html](http://htmlpreview.github.io/?https://github.com/alikhuseynov/make3dOrganoid/blob/master/main_scr_vignettes.html).
